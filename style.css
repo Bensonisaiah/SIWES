@@ -1,0 +1,340 @@
+:root{
+  --primary-color: hsl(5, 85%, 63%);
+  --secondary-color: hsl(35, 77%, 62%);
+  --font-size: 15px;
+  --neutral1: hsl(36, 100%, 99%);
+  --neutral2: hsl(233, 8%, 79%);
+  --neutral3: hsl(236, 13%, 42%);
+  --neutral4: hsl(240, 100%, 5%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* html{
+  border: 1px solid black;
+} */
+body{
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+}
+
+/* nav starts*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.logo{
+  margin-top: 5px;
+}
+.links{
+  width: 30%;
+}
+.links ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.links ul li a{
+  text-decoration: none;
+  color: var(--neutral3);
+  transition: all 0.3s ease-in-out;
+}
+.links ul li a:hover{
+  color: var(--secondary-color);
+}
+/* nav end */
+
+/* first section starts */
+.main{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3.5rem;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  margin-top: 30px;
+  /* height: 550px; */
+  max-height: 1200px;
+  /* border: 2px solid rgb(248, 0, 0); */
+}
+.mainone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid rgb(0, 229, 61); */
+}
+.mainone img{
+  width: 100%;
+  height: 60%;
+  /* margin-bottom: 20px; */
+}
+.texts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+  /* padding-left: 0.5%;
+  padding-right: 0.5%; */
+  /* border: 2px solid rgb(78, 8, 255); */
+}
+.texts h1{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 1.4;
+  word-spacing: 15px;
+}
+.smalltext{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 45%;
+  height: 100%;
+  font-weight: 400;
+  color: var(--neutral3);
+  /* border: 1px solid black; */
+}
+.smalltext p{
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  word-spacing: 5px;
+  margin-top: 10px;
+}
+.smalltext button{
+  width: 50%;
+  height: 50px;
+  border: none;
+  padding: 10px 20px;
+  color: var(--neutral4);
+  background-color: var(--primary-color);
+  font-size: var(--font-size);
+  /* margin-bottom: 10px; */
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.smalltext button:hover{
+  background-color: var(--neutral4);
+  color: var(--neutral1);
+}
+/* first section ends */
+
+/* side section "new" start */
+.maintwo{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start; */
+  /* border: 1px solid black; */
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: var(--neutral4);
+  /* height: 100%; */
+}
+.new1{
+  margin: 2.5rem 0;
+}
+.new-text{
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 45px;
+  margin: 2.5rem 0;
+}
+.new1 h2{
+  color: var(--neutral1);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.new1 h2:hover{
+  color: var(--secondary-color);
+}
+.new1 p{
+  color: var(--neutral2);
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+hr{
+  border: none;
+  border-top: 1px solid var(--neutral3);
+}
+.maintwo> *:last-child{
+  margin-bottom: 0;
+}
+/* side section "new" ends */
+
+/* down section starts */
+.downum{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4.5rem;
+  height: 155px;
+  /* border: 1px solid black; */
+  gap: 3.5rem;
+  margin-bottom: 1500px;
+}
+.contain{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* border: 2px solid rgb(21, 164, 8); */
+  height: 100%;
+  /* gap: 1.8rem; */
+}
+.contain img{
+  height: 155px;
+  /* border: 2px solid rgb(13, 35, 225); */
+}
+/* .words{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 2px solid rgb(10, 223, 78);
+} */
+.words h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+.words h2{
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: var(--neutral4);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.words h2:hover{
+  color: var(--primary-color);
+}
+.words p{
+  color: var(--neutral3);
+  line-height: 25px;
+}
+/* down section starts */
+
+/* responsive design */
+
+@media(max-width: 500px) {
+  .links{
+    display: none;
+  }
+  .mainimage {
+    content: url('assets/images/image-web-3-mobile.jpg');
+    border: 2px solid black;
+    height: 50%;
+  }
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    max-height: 1800px;
+    border: 1px solid rgb(215, 36, 36);
+
+  }
+  .texts{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    border: 1px solid black;
+  }
+  .texts h1{
+  width: 100%;
+  height: 50%;
+  word-spacing: normal;
+  line-height: normal;
+  font-size: 3rem;
+  border: 1px solid black;
+  }
+  .smalltext{
+    width: 100%;
+    height: 50%;
+  }
+  .smalltext p{
+  font-size: 1.0rem;
+  font-weight: 400;
+  line-height: 1.5;
+  word-spacing: normal;
+  margin-top: 10px;
+  }
+  .smalltext button{
+    margin-top: 200px;
+    height: 75px;
+  }
+  .maintwo{
+    border: 5px solid rgb(244, 0, 0);
+  }
+  .downum{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border: 3px solid black;
+  height: auto;
+  }
+}
+@media(min-width: 501px) and (max-width: 1268px) {
+  .downum{
+    gap: 0.5rem;
+  }
+  .contain{
+    gap: 0.1rem;
+  }
+  .contain img{
+  height: 125px;
+  }
+  .words h1{
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+  }
+  .links{
+    display: none;
+  }
+  .words h2{
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+@media(max-width: 1048px) and (min-width: 864px){
+  .texts h1{
+    font-size: 50px;
+  }
+  .smalltext button{
+  width: 60%;  
+  }
+}
+@media(max-width: 1048px) and (min-width: 964px){
+  .texts h1{
+    line-height: 5rem;
+  }
+}
+@media(max-width: 864px) and (min-width: 500px){
+  .main{
+  display: grid;
+  grid-template-columns: 1fr;
+  }
+}
