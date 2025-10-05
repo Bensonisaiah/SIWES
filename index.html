@@ -1,151 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hands On Project</title>
-  <link rel="stylesheet" href="siwes.css">
+  <title>SIWES</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap">
 </head>
 <body>
-  <nav class="container">
-    <div class="main">
-      <h1 class="logo">MEDLAB</h1>
-      <ul class="links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#oursev">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li>Our Team</li>
-        <li>Health Tips</li>
+  <nav>
+    <div class="logo"><img src="assets/images/logo.svg" alt=""></div>
+    <div class="links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
       </ul>
-      <div class="app">Check In</div>
     </div>
   </nav>
+  <section class="main">
+    <div class="mainone">
+      <img class="mainimage" src="assets/images/image-web-3-desktop.jpg" alt="">
+      <div class="texts">
+        <h1>The Bright Future of Web 3.0?</h1>
+        <div class="smalltext">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button>Read more</button>
+        </div>
+      </div>
+    </div>
+    <div class="maintwo">
+      <h1 class="new-text">New</h1>
+      <div class="new1">
+        <h2>Hydrogen VS Electric Cars</h2>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <hr>
+      <div class="new1">
+        <h2>The Downsides of AI Artistry</h2>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <hr>
+      <div class="new1">
+        <h2>Is VC Funding Drying Up?</h2>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+  </section>
+  <section class="downum">
+    <div class="contain">
+      <img src="assets/images/image-retro-pcs.jpg" alt="">
+      <div class="words">
+        <h1>01</h1>
+        <h2>Reviving Retro PCs</h2>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="contain">
+      <img src="assets/images/image-top-laptops.jpg" alt="">
+      <div class="words">
+        <h1>02</h1>
+        <h2>Top 10 Laptops of 2022</h2>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="contain">
+      <img src="assets/images/image-gaming-growth.jpg" alt="">
+      <div class="words">
+        <h1>03</h1>
+        <h2>The Growth of Gaming</h2>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-  <section class="herosection" id="hero">
-    <div class="header">
-      <div class="header1">
-        <h2 class="trusted">Trusted</h2>
-        <h1 class="healthcare">Healthcare for</h1>
-        <h1 class="family">Every Family</h1>
-        <p>Delivering compassionate, <br>patient-centered care with modern medical expertise and technology.</p>
-        <div class="buttons">
-          <div class="bookapp"><a href="#">Book <br>Appointment</a></div>
-          <div class="learnmore"><a href="#">Learn More ></a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="ourservices" id="oursev">
-    <div class="options">
-      <div class="opt1">
-        <div class="optdiv">
-          <img src="https://template.hasthemes.com/reyes/reyes/img/medical/icon/mc-shape-1.png" alt="">
-          <div class="context">
-            <h4>Emergency Care</h4>
-            <p>Round-the-clock emergency services with a dedicated response team, ensuring immediate medical attention whenever you need it.</p>
-          </div>
-        </div>
-      </div>
-      <div class="opt2">
-        <div class="optdiv">
-          <img src="https://template.hasthemes.com/reyes/reyes/img/medical/icon/mc-shape-2.png" alt="">
-          <div class="context">
-            <h4>Online Service</h4>
-            <p>Access quality healthcare from the comfort of your home through our secure video consultations and telemedicine platform.</p>
-          </div>
-        </div>
-      </div>
-      <div class="opt3">
-        <div class="optdiv">
-          <img src="https://template.hasthemes.com/reyes/reyes/img/medical/icon/mc-shape-3.png" alt="">
-          <div class="context">
-            <h4>Qualified Doctors</h4>
-            <p>Our team consists of board-certified specialists with years of experience, committed to providing compassionate and reliable care.</p>
-          </div>
-        </div>
-      </div>
-      <div class="opt4">
-        <div class="optdiv">
-          <img src="https://template.hasthemes.com/reyes/reyes/img/medical/icon/mc-shape-4.png" alt="">
-          <div class="context">
-            <h4>Emergency Care</h4>
-            <p>Equipped with state-of-the-art technology and advanced diagnostic tools for accurate treatment and better outcomes.</p>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </section>
-  <section class="services" id="services">
-    <div class="servicecontainer">
-      <div class="service1">
-        <h2>Our Services</h2>
-        <img src="	https://template.hasthemes.com/reyes/reyes/img/icons/title-shape.png" alt="title shape">
-        <p>From preventive care to advanced treatments, our services are designed to keep you healthy at every stage of life. With expert doctors, modern technology, and a patient-first approach, we ensure you receive the best care possible.</p>
-      </div>
-      <div class="service2">
-        <div class="service21">
-          <div class="service211">
-            <div class="service2111">
-              <img src="	https://template.hasthemes.com/reyes/reyes/img/medical/service/me-service-icon-1.png" alt="">
-              <div class="serviceline">
-                <hr class="hr1">
-                <hr class="hr2">
-              </div>
-            </div>
-            <div class="service2112">
-              <h4>Consultation</h4>
-              <p>Get personalized medical advice from our expert doctors. We provide thorough assessments, accurate diagnoses, and treatment plans tailored to your needs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="service21">
-          <div class="service211">
-            <div class="service2111">
-              <img src="https://template.hasthemes.com/reyes/reyes/img/medical/service/me-service-icon-2.png" alt="">
-              <div class="serviceline">
-                <hr class="hr1">
-                <hr class="hr2">
-              </div>
-            </div>
-            <div class="service2112">
-              <h4>Dialysis unit</h4>
-              <p>Our dialysis center is equipped with modern technology to provide safe, reliable, and comfortable treatment for patients with kidney conditions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="service21">
-          <div class="service211">
-            <div class="service2111">
-              <img src="	https://template.hasthemes.com/reyes/reyes/img/medical/service/me-service-icon-3.png" alt="">
-              <div class="serviceline">
-                <hr class="hr1">
-                <hr class="hr2">
-              </div>
-            </div>
-            <div class="service2112">
-              <h4>Check-up unit</h4>
-              <p>Stay healthy with our preventive health check-ups. We offer comprehensive screenings to detect and manage health risks early.</p>
-            </div>
-          </div>
-        </div>
-        <div class="service21">
-          <div class="service211">
-            <div class="service2111">
-              <img src="https://template.hasthemes.com/reyes/reyes/img/medical/service/me-service-icon-4.png" alt="">
-              <div class="serviceline">
-                <hr class="hr1">
-                <hr class="hr2">
-              </div>
-            </div>
-            <div class="service2112">
-              <h4>dental unit</h4>
-              <p>Our dental specialists provide complete oral care, from routine check-ups and cleaning to advanced treatments, ensuring a healthy and confident smile.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-</body>
-</html>
+</body></html>
